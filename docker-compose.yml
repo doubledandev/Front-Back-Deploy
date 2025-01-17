@@ -1,5 +1,5 @@
 networks:
-  ded:
+  dev:
 
 services:
   nginx:
