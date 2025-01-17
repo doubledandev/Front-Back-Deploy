@@ -17,11 +17,13 @@ services:
   backend:
     build:
       context: ./backend
+      dockerfile: ./Dockerfile_back
     networks:
       - dev
 
   frontend:
     build:
       context: ./frontend
+      dockerfile: ./Dockerfile_front
     networks:
       - dev
