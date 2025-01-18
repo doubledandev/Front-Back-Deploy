@@ -1,8 +1,8 @@
 FROM python:3.11.9-slim
 
-COPY requrements.txt requirements.txt
+COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-COPY ./backend/* .
+COPY . .
 
 CMD [ "python", "main.py"]
